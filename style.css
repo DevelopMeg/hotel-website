@@ -1,0 +1,661 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0.625rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.main-section {
+  max-width: 1366px;
+  margin: 0 auto;
+  transition: 0.4s;
+}
+
+/* no scrolling background - pop-up */
+body {
+  overflow: auto;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* HEADER */
+
+.head {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.head-image {
+  position: relative;
+  top: 0;
+  left: 0;
+  flex-basis: 30vh;
+  background-image: url("IMG/image1.jpg");
+  background-size: cover;
+  background-position: 23% 50%;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 25px);
+  width: 50px;
+  height: 50px;
+  background-color: #f5f5dc;
+}
+
+.logo__title {
+  font-size: 0.75rem;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 0 5px #f5f5dc, 0 0 5px #606358;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.logo__triangle {
+  position: absolute;
+  top: 25px;
+  left: calc(50% - 25px);
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom: 25px solid rgba(0, 0, 0, 0.12);
+}
+
+.head-image__title {
+  padding: 4px 10px 4px 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  font-size: 2rem;
+  text-align: right;
+  color: #f5f5dc;
+  background-color: rgba(251, 251, 251, 0.3);
+  text-shadow: 0 0 10px #000, 0 0 10px #000;
+}
+
+.head-menu {
+  margin: 30px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60vh;
+  list-style: none;
+}
+
+.navbar__link {
+  display: block;
+  padding: 13px;
+  border: 1px solid #000;
+  font-size: 1.6rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+  letter-spacing: 2px;
+}
+
+.navbar__link--btn-book {
+  display: block;
+  margin: 10px;
+  background-image: linear-gradient(180deg, #f5f5dc, #b6d75a);
+}
+
+/* SECTION - HOTEL */
+.section-info-hotel {
+  padding-bottom: 25px;
+  margin: 20px;
+  background-color: #f5f5bf;
+}
+
+.section-info-hotel__title {
+  padding-top: 20px;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.section-info-hotel__text {
+  margin: 15px auto;
+  width: 85%;
+  font-size: 1.6rem;
+  line-height: 22px;
+  text-align: justify;
+}
+
+.photo-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.photo-gallery__item {
+  flex-basis: 30vh;
+  margin-top: 15px;
+  width: 85%;
+}
+
+/* SECTION - ROOMS */
+.section-select-room {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px;
+  padding-bottom: 10px;
+  background-color: #fbd290;
+}
+
+.section-select-room__title {
+  margin: 15px;
+  font-size: 1.9rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.room {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 4px dotted #000;
+  align-items: center;
+}
+
+.room__title {
+  padding: 20px;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.slider-images {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.slider-images__image {
+  display: inline-block;
+  width: 90%;
+  height: 100%;
+}
+
+.slider-images i.fas {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10vw;
+  font-size: 3.5rem;
+  border-radius: 50%;
+  color: #ffc251;
+  text-shadow: 0px 0px 4px #000;
+  background-color: #54290a;
+}
+
+.slider-images__arrow-left {
+  left: 7%;
+}
+
+.slider-images__arrow-right {
+  right: 7%;
+}
+
+.room__text {
+  margin: 20px auto;
+  width: 85%;
+  font-size: 1.6rem;
+  line-height: 22px;
+  text-align: justify;
+}
+
+.button-book {
+  border: 1px solid #000;
+  padding: 7px 50px;
+  margin: 10px 0 20px 0;
+  background-image: linear-gradient(180deg, #ffc251, #cc873c);
+}
+
+.button-book__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* SECTION - TOUR */
+.section-select-tour {
+  margin: 20px;
+  padding-bottom: 10px;
+  background-color: #f5f5bf;
+}
+
+.section-select-tour__title {
+  padding: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.9rem;
+  letter-spacing: 2px;
+}
+
+.collect-tours {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tour {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tour__image {
+  width: 80%;
+  border-radius: 50px;
+}
+
+.tour__text {
+  padding: 20px;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/* POPUP TOUR */
+
+.pop-up.on {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+.tour-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  border: 3px solid #000;
+  width: 90%;
+  height: 90vh;
+  background-color: #f7b64d;
+  z-index: 2;
+  overflow-x: hidden;
+}
+
+.tour-info.on {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tour-info__title {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.9rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #a97b41;
+}
+
+.look-tour {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.look-tour__image {
+  border: 2px solid #000;
+  box-shadow: 0 0 5px 0 #a97b41, 0 0 5px 0 #000;
+  width: 80%;
+}
+
+.read-tour__text {
+  margin: 0 20px 20px 20px;
+  font-size: 1.6rem;
+  line-height: 20px;
+  text-align: justify;
+}
+
+.close-pop-up {
+  display: none;
+}
+
+.close-pop-up.on {
+  display: block;
+  position: absolute;
+  top: 1vh;
+  right: 1vw;
+  font-size: 3.5rem;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
+  z-index: 2;
+}
+
+/* SECTION - ABOUT US */
+
+.section-about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  background-color: #fbd290;
+}
+
+.section-about-us__title {
+  margin: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.9rem;
+  letter-spacing: 2px;
+}
+
+.section-about-us__image {
+  width: 85%;
+  border-radius: 20px;
+  box-shadow: 0 0 6px 2px #fbd290, 0 0 3px 2px #2d2f27;
+}
+
+.section-about-us__text {
+  margin: 21px;
+  font-size: 1.6rem;
+  line-height: 20px;
+  text-align: justify;
+}
+
+/* FOOTER - CONTACT */
+
+.section-contact {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-top: 20px;
+  height: 20vh;
+  width: 100%;
+  transition: 0.4s;
+}
+
+.section-contact.on {
+  top: -40vh;
+}
+
+.contact-switch {
+  position: relative;
+  top: 0;
+  left: 80%;
+  width: 7vh;
+  height: 7vh;
+  border-radius: 50%;
+  border-style: none;
+  background-color: #484848;
+  font-size: 1.9rem;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.contact-switch.on {
+  transform: rotate(180deg);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 10px 0 10px;
+  padding-bottom: 20px;
+  background-color: #484848;
+}
+
+.contact-info__title {
+  padding: 20px;
+  font-size: 1.9rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.contact-info__social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20px;
+  margin: 10px;
+  height: 32vh;
+}
+
+.social-item__icon {
+  border-style: none;
+  margin-right: 30px;
+  width: 10vw;
+  height: 10vw;
+  font-size: 2.5rem;
+  background-color: #484848;
+  color: #fff;
+}
+
+.social-item__text {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.main-section.on {
+  transform: translateY(-5%);
+}
+
+.copyright {
+  margin: 0 10px;
+  padding: 20px;
+  background-color: #484848;
+}
+
+.copyright__text {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.copyright__link {
+  color: #fff;
+}
+
+/* POP UP booking room */
+
+/* popup */
+.box-booking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  border: 3px solid #000;
+  width: 85%;
+  height: 85vh;
+  background-color: #f7b64d;
+  overflow-x: hidden;
+}
+
+.box-booking.on {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box-booking__title {
+  margin-top: 20px;
+  padding: 5px;
+  flex-basis: 30vh;
+  width: 100%;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #a07134;
+}
+
+.rooms-booking {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 90%;
+}
+
+.room-booking {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.room-booking__image {
+  border: 2px solid #000;
+  width: 95%;
+}
+
+.room-booking__btn-book {
+  display: block;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-top: 15px;
+  border: 2px solid #000;
+  width: 100%;
+  height: 8vh;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  background-color: #f7d6a0;
+  transition: 0.3s;
+}
+
+.room-booking__btn-book.on {
+  border-style: dashed;
+  background-color: #c18941;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* form */
+.form-booking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+  border-top: 5px dotted #000;
+  text-align: center;
+  flex-basis: 100vh;
+  flex-shrink: 0;
+}
+
+.form-gallery__image {
+  margin: 30px 0 20px 0;
+  width: 75%;
+  box-shadow: 0 0 7px 3px #000;
+}
+
+.search-form {
+  width: 80%;
+}
+
+.search-form__title {
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px #000;
+}
+
+.search-form__input {
+  display: block;
+  border: 1px solid #000;
+  margin: 0 auto;
+  width: 90%;
+  height: 7vh;
+  background-color: #fff;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+/* dodanie border po kliku */
+.search-form__input.on {
+  border: 2px solid #000;
+}
+
+/* przycisk kalendarz */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  height: 12px;
+  color: rgba(255, 255, 255, 0);
+  opacity: 1;
+  background-image: url("IMG/iconcalendar.png");
+  background-repeat: no-repeat;
+}
+
+/* przyciski góra dół */
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+/* przycisk clear */
+input[type="date"]::-webkit-clear-button {
+  display: none;
+}
+
+/* przyciski góra dół */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  display: none;
+}
+
+/* usunięcie małych przycisków z mozilli */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.search-form__btn-submit {
+  margin: 25px 0 20px 0;
+  border: 2px solid #000;
+  width: 100%;
+  height: 7vh;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: bold;
+  background-color: #b89a74;
+}
