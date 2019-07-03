@@ -659,3 +659,2294 @@ input[type="number"] {
   font-weight: bold;
   background-color: #b89a74;
 }
+
+/* RESPONSYWNOŚĆ - @MEDIA */
+
+/* MOBILE */
+
+@media (min-width: 360px) {
+  .main-section.on {
+    transform: translateY(-5.3%);
+  }
+
+  /* HEADER */
+
+  .head-image__title {
+    font-size: 2.2rem;
+  }
+
+  .navbar__link {
+    padding: 20px;
+  }
+
+  .logo {
+    left: calc(50% - 30px);
+    width: 60px;
+    height: 60px;
+  }
+
+  .logo__title {
+    font-size: 0.9rem;
+  }
+
+  .logo__triangle {
+    top: 30px;
+    left: calc(50% - 30px);
+    border-left-width: 30px;
+    border-right-width: 30px;
+    border-bottom-width: 30px;
+  }
+
+  /* HOTEL INFO */
+
+  .photo-gallery__item {
+    flex-basis: 25vh;
+    width: 82%;
+  }
+
+  /* ROOM */
+
+  .button-book {
+    padding: 10px 60px;
+  }
+
+  /* TOUR & TOUR POPUP */
+
+  .tour__image,
+  .look-tour__image {
+    width: 75%;
+  }
+
+  .tour__text {
+    padding: 18px 16px;
+  }
+
+  .tour-info {
+    height: 85vh;
+  }
+
+  .tour-info__title {
+    padding: 10px 28px;
+  }
+
+  .read-tour__text {
+    line-height: 22px;
+  }
+
+  /* ABOUT US */
+
+  .section-about-us__image {
+    width: 80%;
+  }
+
+  .section-about-us__text {
+    line-height: 22px;
+  }
+
+  /* CONTACT */
+
+  .section-contact {
+    top: 10px;
+    height: 19vh;
+  }
+
+  .section-contact.on {
+    top: -34vh;
+  }
+
+  /* POP UP BOOKING */
+
+  .box-booking__title {
+    padding: 10px;
+  }
+
+  .room-booking__btn-book,
+  .search-form__input,
+  .search-form__btn-submit {
+    height: 6vh;
+  }
+}
+
+@media (min-width: 480px) {
+  /* HEADER */
+
+  .navbar {
+    margin: 0 auto;
+    width: 90%;
+    height: 62vh;
+  }
+
+  .navbar__link {
+    padding: 25px;
+    font-size: 1.7rem;
+  }
+
+  .head-image__title {
+    padding: 6px 12px 6px 0;
+    font-size: 2.3rem;
+    letter-spacing: 1px;
+  }
+
+  .logo {
+    left: calc(50% - 35px);
+    width: 70px;
+    height: 70px;
+  }
+
+  .logo__title {
+    font-size: 1rem;
+  }
+
+  .logo__triangle {
+    top: 35px;
+    left: calc(50% - 35px);
+    border-left-width: 35px;
+    border-right-width: 35px;
+    border-bottom-width: 35px;
+  }
+
+  /* HOTEL INFO */
+
+  .section-info-hotel__title {
+    font-size: 2rem;
+  }
+
+  .section-info-hotel__text {
+    font-size: 1.7rem;
+    line-height: 25px;
+  }
+
+  .photo-gallery__item {
+    width: 76%;
+  }
+
+  /* ROOM */
+
+  .section-select-room__title {
+    margin: 18px;
+    font-size: 2rem;
+  }
+
+  .room__title,
+  .room__text,
+  .button-book__text {
+    font-size: 1.7rem;
+  }
+
+  .room__text {
+    line-height: 23px;
+  }
+
+  .button-book {
+    padding: 12px 85px;
+  }
+
+  .button-book__text {
+    letter-spacing: 2px;
+  }
+
+  .slider-images__image {
+    width: 85%;
+  }
+
+  .slider-images__arrow-right {
+    right: 10%;
+  }
+
+  .slider-images__arrow-left {
+    left: 10%;
+  }
+
+  /* TOUR & TOUR POPUP */
+  .section-select-tour__title {
+    font-size: 2rem;
+  }
+
+  .tour__text {
+    padding: 20px 16px;
+    font-size: 1.7rem;
+  }
+
+  .tour-info {
+    height: 72vh;
+  }
+
+  .tour-info__title {
+    padding: 12px 8px;
+  }
+
+  .look-tour__image {
+    width: 78%;
+  }
+
+  .read-tour__text {
+    margin: 0 auto 25px auto;
+    width: 80%;
+    font-size: 1.7rem;
+    line-height: 25px;
+  }
+
+  /* ABOUT US */
+
+  .section-about-us__title {
+    font-size: 2rem;
+  }
+
+  .section-about-us__text {
+    margin: 25px auto;
+    width: 86%;
+    font-size: 1.7rem;
+    line-height: 25px;
+  }
+
+  /* CONTACT */
+
+  .contact-switch {
+    width: 6vh;
+    height: 6vh;
+    font-size: 2.1rem;
+  }
+
+  .section-contact {
+    height: 16vh;
+  }
+
+  .section-contact.on {
+    top: -27vh;
+  }
+
+  .contact-info__title {
+    font-size: 2rem;
+  }
+
+  .contact-info__social {
+    height: 25vh;
+  }
+
+  .social-item__icon {
+    font-size: 2.8rem;
+  }
+
+  .social-item__text {
+    font-size: 1.7rem;
+  }
+
+  /* POPUP BOOKING */
+
+  .box-booking__title {
+    font-size: 2.4rem;
+  }
+
+  .room-booking__image {
+    width: 90%;
+  }
+
+  .room-booking__btn-book {
+    margin: 15px auto 0 auto;
+    width: 85%;
+    font-size: 1.7rem;
+  }
+
+  .search-form__input {
+    font-size: 1.6rem;
+  }
+
+  .search-form__btn-submit {
+    margin: 40px 0 30px 0;
+  }
+
+  .close-pop-up.on {
+    font-size: 3.8rem;
+  }
+}
+
+@media (min-width: 580px) {
+  /* HEADER */
+
+  .navbar {
+    margin-top: 20px;
+    height: 58vh;
+  }
+
+  .navbar__link {
+    padding: 28px;
+  }
+
+  .head-image__title {
+    font-size: 2.4rem;
+  }
+
+  /* ROOM */
+
+  .button-book {
+    padding: 12px 95px;
+  }
+
+  /* TOUR POPUP */
+
+  .tour-info {
+    height: 58vh;
+  }
+
+  .look-tour__image {
+    width: 80%;
+  }
+
+  /* CONTACT */
+
+  .contact-switch {
+    width: 5vh;
+    height: 5vh;
+  }
+
+  .section-contact {
+    height: 13vh;
+  }
+
+  .section-contact.on {
+    top: -28vh;
+  }
+
+  /* POPUP BOOKING */
+
+  .room-booking__btn-book,
+  .search-form__input,
+  .search-form__btn-submit {
+    height: 5vh;
+  }
+
+  .form-booking {
+    flex-basis: 85vh;
+  }
+
+  .search-form__btn-submit {
+    margin-top: 35px;
+  }
+}
+
+@media (min-width: 720px) {
+  /* HEADER */
+
+  .main-section.on {
+    transform: translateY(-6%);
+  }
+
+  .head {
+    height: 60vh;
+  }
+
+  .logo {
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+  }
+
+  .logo__title {
+    font-size: 1.4rem;
+    line-height: 50px;
+  }
+
+  .logo__triangle {
+    top: 50px;
+    left: calc(50% - 50px);
+    border-left-width: 50px;
+    border-right-width: 50px;
+    border-bottom-width: 50px;
+  }
+
+  .head-image {
+    flex-basis: 25vh;
+  }
+
+  .head-image__title {
+    padding: 7px 15px 7px 0;
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+  }
+
+  .navbar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    height: 30vh;
+  }
+
+  .navbar__item {
+    flex-basis: 45%;
+    margin: 10px;
+  }
+
+  .navbar__link {
+    padding: 30px;
+    font-size: 1.9rem;
+  }
+
+  .navbar__item--btn-book {
+    flex-basis: 70%;
+    margin-top: 20px;
+  }
+
+  /* HOTEL INFO */
+
+  .section-info-hotel__title {
+    font-size: 2.2rem;
+    padding: 30px 0 10px 0;
+  }
+
+  .section-info-hotel__text {
+    margin: 20px auto;
+    width: 78%;
+    font-size: 1.8rem;
+    line-height: 28px;
+  }
+
+  .photo-gallery__item {
+    flex-basis: 20vh;
+    margin-top: 20px;
+    width: 65%;
+  }
+
+  /* ROOM */
+
+  .section-select-room__title {
+    margin: 22px;
+    font-size: 2.2rem;
+  }
+
+  .room__title {
+    font-size: 1.9rem;
+  }
+
+  .slider-images__image {
+    width: 70%;
+  }
+
+  .slider-images i.fas {
+    width: 8vw;
+  }
+
+  .slider-images__arrow-right {
+    right: 16%;
+  }
+
+  .slider-images__arrow-left {
+    left: 16%;
+  }
+
+  .room__text {
+    width: 70%;
+    font-size: 1.8rem;
+    line-height: 26px;
+  }
+
+  .button-book {
+    padding: 14px 105px;
+  }
+
+  .button-book__text {
+    font-size: 1.8rem;
+    letter-spacing: 3px;
+  }
+
+  /* TOUR & TOUR POPUP */
+
+  .section-select-tour {
+    padding: 10px;
+  }
+
+  .collect-tours {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 15px 0;
+  }
+
+  .tour {
+    flex-basis: 50%;
+  }
+
+  .tour__image {
+    width: 80%;
+  }
+
+  .tour__text {
+    width: 62%;
+    font-size: 1.8rem;
+  }
+
+  .section-select-tour__title {
+    padding: 22px;
+    font-size: 2.2rem;
+  }
+
+  .close-pop-up.on {
+    right: 2vw;
+    font-size: 4rem;
+  }
+
+  .tour-info.on {
+    width: 80%;
+    height: 50vh;
+  }
+
+  .tour-info__title {
+    margin-top: 25px;
+    font-size: 2.2rem;
+  }
+
+  .look-tour__image {
+    margin-top: 10px;
+  }
+
+  .read-tour__text {
+    margin: 10px auto 40px auto;
+    width: 75%;
+    font-size: 1.8rem;
+    line-height: 28px;
+  }
+
+  /* ABOUT US */
+
+  .section-about-us__title {
+    margin: 22px;
+    font-size: 2.2rem;
+  }
+
+  .section-about-us__image {
+    width: 65%;
+  }
+
+  .section-about-us__text {
+    width: 80%;
+    font-size: 1.8rem;
+    line-height: 28px;
+  }
+
+  /* CONTACT */
+
+  .contact-switch {
+    font-size: 2.5rem;
+  }
+
+  .section-contact.on {
+    top: -23vh;
+  }
+
+  .contact-info__title {
+    font-size: 2.2rem;
+    letter-spacing: 3px;
+  }
+
+  .copyright__text {
+    font-size: 1.4rem;
+  }
+
+  .contact-info__social {
+    padding-left: 0;
+    height: 22vh;
+  }
+
+  .social-item__icon {
+    width: 8vw;
+    height: 8vw;
+    font-size: 3rem;
+  }
+
+  .social-item__text {
+    font-size: 1.8rem;
+  }
+
+  /* BOOKING POPUP */
+
+  .box-booking__title {
+    margin-top: 25px;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+  }
+
+  .room-booking {
+    margin-top: 35px;
+  }
+
+  .room-booking__image,
+  .room-booking__btn-book {
+    width: 70%;
+  }
+
+  .room-booking__btn-book,
+  .search-form__input,
+  .search-form__btn-submit {
+    font-size: 1.8rem;
+  }
+
+  .room-booking__btn-book {
+    letter-spacing: 2px;
+  }
+
+  .form-booking {
+    flex-basis: 75vh;
+    margin-bottom: 20px;
+  }
+
+  .form-gallery__image {
+    width: 85%;
+  }
+
+  .search-form__title {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+
+  .search-form__input {
+    width: 95%;
+  }
+}
+
+/* LANDSCAPE */
+
+@media (min-width: 480px) and (orientation: landscape) {
+  /* HEADER */
+
+  .main-section.on {
+    transform: translateY(-4%);
+  }
+
+  .head-menu {
+    margin: 20px auto;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .head-image__title {
+    font-size: 2rem;
+  }
+
+  .navbar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 58vh;
+  }
+
+  .navbar__item {
+    flex-basis: 50%;
+  }
+
+  .navbar__link {
+    padding: 10px;
+    margin: 5px;
+    font-size: 1.6rem;
+  }
+
+  .navbar__item--btn-book {
+    margin-top: 10px;
+  }
+
+  /* SECTION - HOTEL */
+
+  .section-info-hotel__title {
+    font-size: 1.9rem;
+  }
+
+  .section-info-hotel__text {
+    font-size: 1.6rem;
+  }
+
+  .photo-gallery__item {
+    flex-basis: 20vh;
+    width: 70%;
+  }
+
+  /* SECTION - ROOMS */
+
+  .section-select-room__title {
+    font-size: 1.9rem;
+  }
+
+  .room__title,
+  .room__text {
+    font-size: 1.6rem;
+  }
+
+  .room__text {
+    width: 80%;
+  }
+
+  .slider-images__image {
+    width: 70%;
+  }
+
+  .slider-images__arrow-left {
+    left: 16%;
+  }
+
+  .slider-images__arrow-right {
+    right: 16%;
+  }
+
+  .slider-images i.fas {
+    width: 8vw;
+    font-size: 3.2rem;
+  }
+
+  .button-book__text {
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+  }
+
+  /* SECTION - TOUR */
+
+  .section-select-tour__title {
+    font-size: 1.9rem;
+  }
+
+  .tour__image {
+    width: 65%;
+  }
+
+  .tour__text {
+    font-size: 1.6rem;
+  }
+
+  /* POPUP TOUR */
+
+  .tour-info {
+    height: 85vh;
+  }
+
+  .tour-info__title {
+    font-size: 1.9rem;
+  }
+
+  .look-tour__image {
+    width: 60%;
+  }
+
+  .read-tour__text {
+    font-size: 1.6rem;
+    line-height: 24px;
+  }
+
+  /* SECTION - ABOUT US */
+
+  .section-about-us__title {
+    font-size: 1.9rem;
+  }
+
+  .section-about-us__image {
+    width: 75%;
+  }
+
+  .section-about-us__text {
+    font-size: 1.6rem;
+    line-height: 24px;
+  }
+
+  /* FOOTER - CONTACT */
+
+  .section-contact {
+    height: 38vh;
+  }
+
+  .section-contact.on {
+    top: -50vh;
+  }
+
+  .contact-switch {
+    width: 13vh;
+    height: 13vh;
+    font-size: 2rem;
+  }
+
+  .contact-info__title {
+    padding-bottom: 10px;
+    font-size: 1.9rem;
+  }
+
+  .contact-info__social {
+    height: 46vh;
+  }
+
+  .social-item__icon {
+    margin-right: 50px;
+    width: 5vw;
+    height: 5vw;
+    font-size: 2.4rem;
+  }
+
+  .social-item__text {
+    font-size: 1.6rem;
+  }
+
+  /* POP UP booking room */
+
+  .box-booking__title {
+    padding: 5px;
+    font-size: 2.2rem;
+  }
+
+  .room-booking__image,
+  .room-booking__btn-book {
+    width: 80%;
+  }
+
+  .room-booking__btn-book,
+  .search-form__input,
+  .search-form__btn-submit {
+    height: 14vh;
+  }
+
+  .room-booking__btn-book,
+  .search-form__title,
+  .search-form__btn-submit {
+    font-size: 1.6rem;
+  }
+
+  .form-gallery__image {
+    width: 70%;
+  }
+
+  .search-form__input {
+    font-size: 1.5rem;
+  }
+
+  .search-form__btn-submit {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 600px) and (orientation: landscape) {
+  /* HEADER */
+  .head-menu {
+    margin-top: 10px;
+  }
+
+  .head-image__title {
+    padding: 5px 20px 5px 0;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+  }
+
+  .navbar__link {
+    padding: 15px;
+    font-size: 1.7rem;
+  }
+
+  .navbar__item--btn-book {
+    margin-top: 15px;
+  }
+
+  /* HOTEL INFO */
+
+  .section-info-hotel__title {
+    font-size: 2rem;
+  }
+
+  .section-info-hotel__text {
+    width: 80%;
+    font-size: 1.7rem;
+    line-height: 26px;
+  }
+
+  .photo-gallery__item {
+    width: 60%;
+  }
+
+  /* ROOMS */
+
+  .section-select-room__title {
+    font-size: 2rem;
+  }
+
+  .room__title,
+  .room__text,
+  .button-book__text {
+    font-size: 1.7rem;
+  }
+
+  .button-book__text {
+    letter-spacing: 3px;
+  }
+
+  /* TOUR & POPUP TOUR */
+
+  .section-select-tour__title {
+    font-size: 2rem;
+  }
+
+  .tour__image {
+    width: 70%;
+  }
+
+  .tour__text {
+    padding: 20px 16px;
+    font-size: 1.7rem;
+  }
+
+  .read-tour__text {
+    font-size: 1.7rem;
+    line-height: 25px;
+  }
+
+  /* ABOUT US */
+
+  .section-about-us__title {
+    font-size: 2rem;
+  }
+
+  .section-about-us__image {
+    width: 70%;
+  }
+
+  .section-about-us__text {
+    width: 80%;
+    font-size: 1.7rem;
+    line-height: 26px;
+  }
+
+  /* CONTACT */
+
+  .contact-info__title {
+    font-size: 2rem;
+  }
+
+  .contact-info__social {
+    margin: 15px;
+  }
+
+  .social-item__icon {
+    font-size: 2.5rem;
+  }
+
+  .social-item__text {
+    font-size: 1.7rem;
+  }
+
+  .contact-switch {
+    font-size: 2.2rem;
+  }
+
+  /* POPUP BOOKING */
+
+  .box-booking__title {
+    font-size: 2.3rem;
+    letter-spacing: 3px;
+  }
+
+  .room-booking__image,
+  .room-booking__btn-book {
+    width: 70%;
+  }
+
+  .room-booking__btn-book,
+  .search-form__input,
+  .search-form__btn-submit {
+    height: 12vh;
+  }
+
+  .search-form__title,
+  .search-form__btn-submit,
+  .room-booking__btn-book {
+    font-size: 1.7rem;
+  }
+
+  .room-booking__btn-book {
+    letter-spacing: 2px;
+  }
+
+  .search-form__input {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 720px) and (orientation: landscape) {
+  /* HEADER */
+
+  .head {
+    height: 100vh;
+  }
+
+  .head-image {
+    flex-basis: 32vh;
+  }
+
+  .navbar__item {
+    margin: 0;
+  }
+
+  .navbar__link {
+    margin: 10px;
+  }
+
+  .navbar__item--btn-book {
+    margin-top: 15px;
+  }
+
+  /* HOTEL INFO */
+  .section-info-hotel__title {
+    font-size: 2.1rem;
+  }
+
+  .section-info-hotel__text {
+    margin: 10px auto;
+    width: 75%;
+  }
+
+  .photo-gallery__item {
+    width: 55%;
+  }
+
+  /* ROOMS */
+
+  .section-select-room__title {
+    font-size: 2.1rem;
+  }
+
+  .slider-images__image {
+    width: 60%;
+  }
+
+  .slider-images__arrow-right {
+    right: 21%;
+  }
+
+  .slider-images__arrow-left {
+    left: 21%;
+  }
+
+  .room__text {
+    width: 65%;
+  }
+
+  /* TOUR & POPUP TOUR*/
+
+  .section-select-tour__title {
+    padding: 15px;
+    font-size: 2.1rem;
+  }
+
+  .collect-tours {
+    margin: 10px auto;
+  }
+
+  .tour__text {
+    padding: 15px 16px 25px 16px;
+    width: 66%;
+    line-height: 22px;
+  }
+
+  .tour__image {
+    width: 65%;
+  }
+
+  .tour-info.on {
+    height: 80vh;
+  }
+
+  .read-tour__text {
+    margin: 0 auto 25px auto;
+  }
+
+  /* ABOUT US */
+
+  .section-about-us__title {
+    font-size: 2.1rem;
+  }
+
+  .section-about-us__image {
+    width: 60%;
+  }
+
+  .section-about-us__text {
+    width: 75%;
+  }
+
+  /* CONTACT */
+
+  .contact-info__title {
+    font-size: 2.1rem;
+  }
+
+  .section-contact {
+    height: 35vh;
+  }
+
+  /* POPUP BOOKING */
+
+  .box-booking__title {
+    padding: 10px;
+  }
+
+  .room-booking__image,
+  .room-booking__btn-book {
+    width: 65%;
+  }
+
+  .search-form__btn-submit {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 850px) and (orientation: landscape) {
+  /* HEADER */
+  .head-image__title {
+    padding: 6px 25px 6px 0;
+    font-size: 2.4rem;
+  }
+
+  .navbar__link {
+    padding: 20px;
+    font-size: 1.8rem;
+  }
+
+  /* HOTEL INFO */
+
+  .section-info-hotel__title {
+    font-size: 2.2rem;
+  }
+
+  .section-info-hotel__text {
+    font-size: 1.8rem;
+    line-height: 28px;
+  }
+
+  .photo-gallery__item {
+    width: 52%;
+  }
+
+  /* ROOMS */
+
+  .section-select-room__title {
+    font-size: 2.2rem;
+  }
+
+  .room__title,
+  .room__text,
+  .button-book__text {
+    font-size: 1.8rem;
+  }
+
+  .room__title {
+    padding: 24px;
+  }
+
+  /* TOUR & POPUP TOUR */
+
+  .section-select-tour__title {
+    font-size: 2.2rem;
+  }
+
+  .tour__text {
+    padding-top: 18px;
+    width: 58%;
+    font-size: 1.8rem;
+    line-height: 23px;
+  }
+
+  .tour__image {
+    width: 60%;
+  }
+
+  .tour-info__title {
+    font-size: 2rem;
+  }
+
+  .look-tour__image {
+    width: 70%;
+  }
+
+  .read-tour__text {
+    margin: 10px auto 30px auto;
+    width: 78%;
+    font-size: 1.8rem;
+    line-height: 28px;
+  }
+
+  /* ABOUT US */
+
+  .section-about-us__title {
+    font-size: 2.2rem;
+  }
+
+  .section-about-us__image {
+    width: 55%;
+  }
+
+  .section-about-us__text {
+    width: 70%;
+    font-size: 1.8rem;
+    line-height: 28px;
+  }
+
+  /* CONTACT */
+
+  .contact-info__title {
+    font-size: 2.2rem;
+  }
+
+  .section-contact {
+    height: 30vh;
+  }
+
+  .section-contact.on {
+    top: -42vh;
+  }
+
+  .contact-info__social {
+    margin: 20px;
+    height: 40vh;
+  }
+
+  .social-item__text {
+    font-size: 1.8rem;
+  }
+
+  .contact-switch {
+    width: 12vh;
+    height: 12vh;
+    font-size: 2.3rem;
+  }
+
+  /* POPUP BOOKING */
+
+  .box-booking__title {
+    font-size: 2.4rem;
+    letter-spacing: 4px;
+  }
+
+  .room-booking__image,
+  .room-booking__btn-book {
+    width: 60%;
+  }
+
+  .room-booking__btn-book,
+  .search-form__title,
+  .search-form__btn-submit {
+    font-size: 1.8rem;
+  }
+
+  .room-booking__btn-book,
+  .search-form__input,
+  .search-form__btn-submit {
+    height: 11vh;
+  }
+
+  .room-booking__btn-book {
+    margin-bottom: 10px;
+  }
+
+  .form-gallery__image {
+    width: 75%;
+  }
+
+  .search-form {
+    width: 85%;
+  }
+
+  .search-form__input {
+    width: 100%;
+  }
+}
+
+/* TABLET & DESKTOP */
+
+@media (min-width: 1024px) {
+  /* HEADER */
+
+  .main-section.on {
+    transform: translateY(-7%);
+  }
+
+  .head {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 40vh;
+    background-image: url("IMG/image1.jpg");
+    background-size: cover;
+    background-position: 23% 50%;
+    background-repeat: no-repeat;
+  }
+
+  .logo {
+    display: block;
+    top: 0;
+    left: 4%;
+    width: 80px;
+    height: 90px;
+    animation: shake 0.4s linear 6 alternate;
+    transform-origin: 50% 0;
+  }
+
+  /* ANIMATION LOGO */
+  @keyframes shake {
+    0% {
+      transform: rotate(10deg);
+    }
+
+    100% {
+      transform: rotate(-10deg);
+    }
+  }
+
+  .logo__title {
+    padding-left: 2px;
+    font-size: 1.3rem;
+  }
+
+  .logo__triangle {
+    left: calc(50% - 40px);
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 40px solid rgba(0, 0, 0, 0.12);
+  }
+
+  .head-image {
+    position: static;
+    background-image: none;
+    flex-basis: 0;
+  }
+
+  .head-image__title {
+    padding: 8px 30px 8px 0;
+    font-size: 2.6rem;
+    letter-spacing: 3px;
+  }
+
+  .navbar {
+    margin: 0;
+    position: absolute;
+    top: 4%;
+    right: 2%;
+    height: 10vh;
+    width: 83%;
+  }
+
+  .navbar__item {
+    margin: 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+    flex-basis: 16%;
+    height: 55px;
+    overflow: hidden;
+  }
+
+  .navbar__link {
+    margin: 0;
+    padding: 6px;
+    border-top-width: 0;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-bottom: 1px solid #000;
+  }
+
+  .navbar__link:hover {
+    font-weight: 600;
+  }
+
+  .navbar__link::after {
+    content: "";
+    position: absolute;
+    bottom: 19px;
+    left: -90%;
+    background-color: #000;
+    transition: 0.4s linear;
+  }
+
+  .navbar__link:hover::after {
+    width: 100%;
+    height: 3px;
+    left: 0;
+  }
+
+  .navbar__item--btn-book {
+    margin: 10px;
+    margin-left: 20px;
+    flex-grow: 1;
+  }
+
+  .navbar__link--btn-book {
+    border: 2px solid rgb(31, 18, 18);
+    letter-spacing: 3px;
+    transition: 0.3s;
+  }
+
+  .navbar__link--btn-book:hover {
+    font-weight: normal;
+    font-size: 2.4rem;
+  }
+
+  .navbar__link--btn-book::after {
+    background-color: transparent;
+  }
+
+  /* HOTEL INFO */
+  .section-info-hotel {
+    padding-bottom: 0;
+    margin: 20px auto;
+    width: 95%;
+    transform: translateX(-150%);
+    transition: 1s;
+  }
+
+  .section-info-hotel.active {
+    transform: translateX(0);
+  }
+
+  .section-info-hotel__title {
+    padding-top: 25px;
+    letter-spacing: 3px;
+  }
+
+  .section-info-hotel__text {
+    margin: 10px auto;
+    width: 90%;
+    line-height: 32px;
+  }
+
+  .photo-gallery {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .photo-gallery__item {
+    width: 30%;
+    height: 22vh;
+  }
+
+  /* SECTION - ROOMS */
+
+  .section-select-room {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    width: 95%;
+  }
+
+  .section-select-room__title {
+    flex-basis: 100%;
+    padding: 22px;
+    margin: 0;
+    border-bottom: 4px dotted #000;
+    letter-spacing: 3px;
+  }
+
+  .room {
+    flex-basis: 49%;
+    transform: scale(0);
+    transition: 1s;
+    border: none;
+  }
+
+  .room__text {
+    width: 74%;
+  }
+
+  .room.active {
+    transform: scale(1);
+  }
+
+  .room--three,
+  .room--four {
+    border-top: 4px dotted #000;
+  }
+
+  .room__title {
+    font-size: 1.8rem;
+  }
+
+  .slider-images__image {
+    width: 80%;
+    height: 30vh;
+  }
+
+  .slider-images i.fas {
+    font-size: 4rem;
+    width: 4vw;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .slider-images__arrow-left {
+    left: 12%;
+  }
+
+  .slider-images__arrow-right {
+    right: 12%;
+  }
+
+  .slider-images i.fas:hover {
+    color: #ffda8a;
+  }
+
+  .button-book {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 10px 80px;
+    margin: 5px 0 30px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .button-book__text {
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+  }
+
+  .button-book:hover .button-book__text {
+    top: 40px;
+  }
+
+  .button-book::before {
+    font-family: "Font Awesome\ 5 Free";
+    content: "\f236";
+    position: absolute;
+    left: 50%;
+    top: -80%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+  }
+
+  .button-book:hover::before {
+    top: 50%;
+  }
+
+  /* SECTION - TOUR */
+
+  .section-select-tour {
+    margin: 20px auto;
+    padding: 0 0 10px 0;
+    width: 95%;
+  }
+
+  .section-select-tour__title {
+    padding: 25px;
+    letter-spacing: 3px;
+  }
+
+  .collect-tours {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .tour {
+    flex-basis: 22%;
+    cursor: pointer;
+  }
+
+  .tour__image {
+    width: 95%;
+    border-radius: 100px;
+    transform: scale(0);
+    transition: 0.7s;
+  }
+
+  .tour__image.active {
+    transform: scale(1);
+  }
+
+  .tour__image:hover {
+    transform: scale(1.1);
+  }
+
+  .tour__text {
+    padding: 18px 10px;
+    width: 100%;
+    font-size: 1.7rem;
+    text-align: center;
+  }
+
+  /* POPUP TOUR */
+
+  .pop-up.on {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .tour-info.on {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 60vh;
+  }
+
+  .tour-info__title {
+    flex-basis: 100%;
+    height: 50px;
+    font-size: 2.2rem;
+  }
+
+  .look-tour {
+    flex-basis: 40%;
+    margin: 20px 0;
+  }
+
+  .look-tour__image {
+    margin: 0 0 10px 40px;
+    width: 85%;
+  }
+
+  .read-tour {
+    flex-basis: 50%;
+    margin: 10px;
+  }
+
+  .read-tour__text {
+    margin: 10px auto;
+    width: 75%;
+  }
+
+  /* SECTION - ABOUT US */
+
+  .section-about-us {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+    width: 95%;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-bottom: 40px;
+    transform: translateX(-150%);
+    transition: 1s;
+    z-index: -1;
+  }
+
+  .section-about-us.active {
+    transform: translateX(0);
+  }
+
+  .section-about-us__title {
+    flex-basis: 100%;
+    margin: 25px;
+    letter-spacing: 3px;
+  }
+
+  .section-about-us__image {
+    margin: 10px 0 0 45px;
+    width: 38%;
+  }
+
+  .section-about-us__text {
+    flex-basis: 48%;
+    margin: 0 45px 0 40px;
+    line-height: 34px;
+  }
+
+  /* FOOTER - CONTACT */
+
+  .section-contact {
+    margin-top: 50px;
+    height: 18vh;
+  }
+
+  .section-contact.on {
+    top: -24vh;
+  }
+
+  .contact-switch {
+    left: 90%;
+    width: 7vh;
+    height: 7vh;
+    font-size: 2.2rem;
+    cursor: pointer;
+  }
+
+  .contact-switch:hover {
+    color: #bdd185;
+    text-shadow: 0 0 2px #000;
+  }
+
+  .contact-info {
+    cursor: pointer;
+  }
+
+  .contact-info__social {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+    height: 20vh;
+    width: 60%;
+  }
+
+  .social-item {
+    flex-basis: 50%;
+    transition: 0.4s;
+  }
+
+  .social-item:hover .social-item__icon,
+  .social-item:hover .social-item__text {
+    color: #e8f7ba;
+  }
+
+  .social-item:hover {
+    border-color: #e8f7ba;
+  }
+
+  .social-item__icon {
+    margin-right: 40px;
+    font-size: 3rem;
+    transition: 0.4s;
+  }
+
+  .social-item__text {
+    transition: 0.4s;
+  }
+
+  /* POP UP booking room */
+
+  .box-booking__title {
+    font-size: 2.6rem;
+  }
+
+  .rooms-booking {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    height: 75vh;
+  }
+
+  .room-booking {
+    flex-basis: 50%;
+    padding: 10px;
+    margin-top: 0;
+  }
+
+  .room-booking__image,
+  .room-booking__btn-book {
+    width: 75%;
+    cursor: pointer;
+  }
+
+  .room-booking__btn-book {
+    height: 6vh;
+  }
+
+  .room-booking__btn-book:hover {
+    transform: scale(1.1);
+  }
+
+  .form-booking {
+    width: 100%;
+    flex-basis: 85vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  .form-gallery {
+    flex-basis: 50%;
+  }
+
+  .form-gallery__image {
+    margin: 25px 0 0 20px;
+    width: 80%;
+    height: 65vh;
+    box-shadow: 0 0 10px 4px #000;
+  }
+
+  .search-form {
+    flex-basis: 50%;
+    margin-top: 30px;
+    height: 70vh;
+  }
+
+  .search-form__btn-submit {
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  .search-form__btn-submit:hover {
+    transform: scale(1.1);
+  }
+
+  .search-form__input {
+    width: 75%;
+    height: 7vh;
+    cursor: pointer;
+  }
+
+  .search-form__btn-submit {
+    margin: 40px 0 20px 0;
+    height: 8vh;
+    width: 70%;
+    line-height: 40px;
+    cursor: pointer;
+  }
+
+  .close-pop-up {
+    font-size: 4rem;
+    text-shadow: 0 0 20px #000;
+    transform: translate(0, 0);
+    transition: 0.4s;
+    cursor: pointer;
+  }
+
+  .close-pop-up:hover {
+    color: #a97b41;
+    text-shadow: 0 0 20px #000;
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    height: 20px;
+    width: 18px;
+    background-image: url("IMG/iconcalendar2.png");
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1240px) {
+  /* HEADER */
+
+  .head-image__title {
+    padding: 8px 65px 8px 0;
+  }
+
+  .navbar {
+    top: 5%;
+    right: 6%;
+    width: 75%;
+  }
+
+  .navbar__item--btn-book {
+    margin-left: 40px;
+  }
+
+  .navbar__link {
+    padding: 7px;
+  }
+
+  .navbar__link--btn-book {
+    line-height: 20px;
+  }
+
+  .navbar__link::after {
+    bottom: 17px;
+  }
+
+  .logo {
+    left: 5%;
+  }
+
+  /* HOTEL INFO */
+
+  .section-info-hotel {
+    width: 90%;
+  }
+
+  .section-info-hotel__text {
+    width: 80%;
+  }
+
+  .photo-gallery {
+    width: 85%;
+  }
+
+  .photo-gallery__item {
+    width: 29%;
+  }
+
+  /* ROOMS */
+
+  .section-select-room {
+    width: 90%;
+  }
+
+  .slider-images__image {
+    width: 70%;
+    height: 34vh;
+  }
+
+  .slider-images__arrow-right {
+    right: 17%;
+  }
+
+  .slider-images__arrow-left {
+    left: 17%;
+  }
+
+  .button-book {
+    padding: 12px 90px;
+  }
+
+  /* TOUR */
+
+  .section-select-tour,
+  .tour__image {
+    width: 90%;
+  }
+
+  /* TOUR POPUP */
+
+  .tour-info.on {
+    width: 70%;
+    height: 55vh;
+  }
+
+  .tour__text {
+    width: 94%;
+  }
+
+  .look-tour__image {
+    width: 70%;
+  }
+
+  .read-tour__text {
+    margin: 20px auto;
+    width: 89%;
+    line-height: 29px;
+  }
+
+  /* ABOUT US */
+
+  .section-about-us {
+    width: 90%;
+  }
+
+  .section-about-us__image {
+    margin-right: 20px;
+    width: 35%;
+  }
+
+  .section-about-us__text {
+    flex-basis: 41%;
+    margin: 0 20px 0 50px;
+    line-height: 38px;
+  }
+
+  /* CONTACT */
+
+  .section-contact {
+    height: 20vh;
+  }
+
+  .section-contact.on {
+    top: -18vh;
+  }
+
+  .contact-info__title {
+    padding: 25px 0 0 0;
+  }
+
+  .contact-info__social {
+    height: 18vh;
+    width: 95%;
+  }
+
+  .social-item {
+    flex-basis: 24%;
+    margin-right: 10px;
+    padding: 14px 8px 10px 8px;
+    border: 2px dashed #867e7e;
+    text-align: center;
+  }
+
+  .social-item__icon {
+    margin-right: 20px;
+    width: 3vw;
+    height: 3vw;
+  }
+
+  /* POPUP BOOKING */
+
+  .box-booking__title {
+    margin-top: 25px;
+  }
+
+  .rooms-booking {
+    height: 95vh;
+  }
+
+  .room-booking__image,
+  .room-booking__btn-book {
+    width: 70%;
+  }
+
+  .room-booking__btn-book,
+  .search-form__input {
+    height: 8vh;
+  }
+
+  .form-gallery__image {
+    width: 66%;
+  }
+
+  .search-form {
+    height: 75vh;
+  }
+
+  .search-form__title {
+    letter-spacing: 3px;
+  }
+
+  .search-form__btn-submit {
+    margin-top: 45px;
+    font-size: 1.9rem;
+    letter-spacing: 3px;
+  }
+
+  .search-form__input {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1440px) {
+  /* HEADER */
+
+  .head {
+    height: 36vh;
+  }
+
+  .navbar {
+    top: 2%;
+  }
+
+  .navbar__item {
+    height: 56px;
+  }
+
+  .navbar__link {
+    padding: 8px;
+    font-size: 2rem;
+  }
+
+  .navbar__link--btn-book {
+    line-height: 22px;
+  }
+
+  .navbar__link::after {
+    bottom: 14px;
+  }
+
+  .head-image__title {
+    font-size: 2.8rem;
+  }
+
+  /* HOTEL INFO */
+
+  .section-info-hotel {
+    font-size: 2.3rem;
+  }
+
+  .photo-gallery__item {
+    height: 19vh;
+  }
+
+  /* ROOM */
+
+  .section-select-room__title {
+    font-size: 2.3rem;
+  }
+
+  .room-title {
+    font-size: 1.9rem;
+  }
+
+  .slider-images__image {
+    height: 26vh;
+  }
+
+  .slider-images i.fas {
+    width: 3vw;
+  }
+
+  .button-book__text {
+    letter-spacing: 3px;
+  }
+
+  /* TOUR POPUP */
+
+  .tour-info.on {
+    width: 55%;
+    height: 52vh;
+  }
+
+  .look-tour {
+    flex-basis: 45%;
+  }
+
+  .look-tour__image {
+    width: 72%;
+  }
+
+  .read-tour {
+    margin: 5px 20px 0 10px;
+  }
+
+  .read-tour__text {
+    width: 85%;
+    line-height: 30px;
+  }
+
+  /* ABOUT US */
+
+  .section-about-us__image {
+    width: 30%;
+  }
+
+  .section-about-us__text {
+    flex-basis: 38%;
+    line-height: 36px;
+  }
+
+  /* CONTACT */
+
+  .section-contact {
+    height: 18vh;
+  }
+
+  .section-contact.on {
+    top: -14vh;
+  }
+
+  .contact-info__social {
+    height: 15vh;
+    width: 90%;
+  }
+
+  .social-item {
+    padding-top: 20px;
+  }
+
+  .social-item__text {
+    font-size: 1.9rem;
+  }
+
+  /* POPUP BOOKING */
+
+  .box-booking.on {
+    width: 65%;
+  }
+
+  .box-booking__title {
+    margin-top: 30px;
+    font-size: 2.8rem;
+  }
+
+  .rooms-booking {
+    margin-top: 25px;
+    height: 75vh;
+  }
+
+  .room-booking {
+    margin-top: 15px;
+  }
+
+  .room-booking__btn-book {
+    letter-spacing: 3px;
+  }
+
+  .room-booking__btn-book,
+  .search-form__title {
+    font-size: 1.9rem;
+  }
+
+  .room-booking__btn-book,
+  .search-form__input {
+    height: 6vh;
+  }
+
+  .form-booking {
+    flex-basis: 73vh;
+  }
+
+  .form-gallery__image {
+    margin: 0 0 0 35px;
+    width: 72%;
+    height: 54vh;
+  }
+
+  .search-form {
+    height: 68vh;
+  }
+
+  .search-form__title {
+    margin-top: 20px;
+  }
+
+  .search-form__btn-submit {
+    margin-top: 50px;
+    width: 65%;
+    height: 7vh;
+    font-size: 2rem;
+    letter-spacing: 4px;
+  }
+
+  .close-pop-up.on {
+    font-size: 4.3rem;
+  }
+}
+
+@media (min-width: 1800px) {
+  /* HEADER */
+
+  .navbar {
+    height: 8vh;
+  }
+
+  /* TOUR POPUP */
+
+  .look-tour__image {
+    width: 68%;
+  }
+
+  .tour-info.on {
+    width: 50%;
+    height: 45vh;
+  }
+
+  .read-tour__text {
+    width: 80%;
+    line-height: 32px;
+  }
+
+  /* CONTACT */
+
+  .section-contact {
+    height: 16vh;
+  }
+
+  .contact-switch {
+    width: 6vh;
+    height: 6vh;
+    font-size: 2.4rem;
+  }
+
+  .contact-info__social {
+    width: 80%;
+  }
+
+  .social-item {
+    margin-right: 15px;
+    padding-bottom: 0;
+  }
+
+  /* POPUP BOOKING */
+
+  .form-gallery__image {
+    margin-bottom: 50px;
+    width: 66%;
+    height: 52vh;
+  }
+
+  .search-form__btn-submit {
+    margin-top: 65px;
+  }
+}
