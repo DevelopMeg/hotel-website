@@ -164,28 +164,35 @@ const inputCheckOut = document.getElementById("check-out");
 // min date check in
 
 const minDateCheckIn = new Date().toISOString().slice(0, 10);
-console.log(minDateCheckIn);
 
 inputCheckIn.min = minDateCheckIn;
 
-// min date check out
+inputCheckIn.addEventListener('change', () => {
 
-let yearMinDateCheckIn = minDateCheckIn.slice(0, 4) * 1
-let monthMinDateCheckIn = minDateCheckIn.slice(5, 7) * 1
-var lastDayInMonth = new Date(yearMinDateCheckIn, monthMinDateCheckIn, 0);
+ // value check in
 
-if (minDateCheckIn.slice(8, 10) * 1 === lastDayInMonth.getDate() && minDateCheckIn.slice(5, 7) * 1 !== 12) {
- month = minDateCheckIn.slice(5, 7) * 1 < 10 ? `0${minDateCheckIn.slice(5, 7) * 1 + 1}` : minDateCheckIn.slice(5, 7) * 1 + 1
- minDateCheckOut = `${minDateCheckIn.slice(0, 4)}-${month}-0${1}`;;
-} else if (minDateCheckIn.slice(5, 7) * 1 === 12 && minDateCheckIn.slice(8, 10) * 1 === 31) {
- minDateCheckOut = `${minDateCheckIn.slice(0, 4) * 1 + 1}-0${1}-0${1}`
-} else {
- days = minDateCheckIn.slice(8, 10) * 1 < 10 ? `0${minDateCheckIn.slice(8, 10) * 1 + 1}` : minDateCheckIn.slice(8, 10) * 1 + 1
+ const valueDateCheckIn = inputCheckIn.value
 
- minDateCheckOut = `${minDateCheckIn.slice(0, 7)}-${days}`;
-}
+ // min date check out 
 
-inputCheckOut.min = minDateCheckOut;
+ let yearDateCheckIn = valueDateCheckIn.slice(0, 4) * 1
+ let monthDateCheckIn = valueDateCheckIn.slice(5, 7) * 1
+ var lastDayInMonth = new Date(yearDateCheckIn, monthDateCheckIn, 0);
+
+ if (valueDateCheckIn.slice(8, 10) * 1 === lastDayInMonth.getDate() && valueDateCheckIn.slice(5, 7) * 1 !== 12) {
+  month = valueDateCheckIn.slice(5, 7) * 1 < 10 ? `0${valueDateCheckIn.slice(5, 7) * 1 + 1}` : valueDateCheckIn.slice(5, 7) * 1 + 1
+  valueDateCheckOut = `${valueDateCheckIn.slice(0, 4)}-${month}-0${1}`;;
+ } else if (valueDateCheckIn.slice(5, 7) * 1 === 12 && valueDateCheckIn.slice(8, 10) * 1 === 31) {
+  valueDateCheckOut = `${valueDateCheckIn.slice(0, 4) * 1 + 1}-0${1}-0${1}`
+ } else {
+  days = valueDateCheckIn.slice(8, 10) * 1 < 10 ? `0${valueDateCheckIn.slice(8, 10) * 1 + 1}` : valueDateCheckIn.slice(8, 10) * 1 + 1
+
+  valueDateCheckOut = `${valueDateCheckIn.slice(0, 7)}-${days}`;
+ }
+
+ inputCheckOut.min = valueDateCheckOut;
+
+})
 
 // *********************************************************
 
