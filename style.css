@@ -16,7 +16,7 @@ html {
 .main-section {
   max-width: 1366px;
   margin: 0 auto;
-  transition: 0.4s;
+  transition: transform 0.4s;
 }
 
 /* no scrolling background - pop-up */
@@ -89,7 +89,8 @@ body.no-scroll {
 }
 
 .head-menu {
-  margin: 30px;
+  margin: 30px auto;
+  width: 80%;
 }
 
 .navbar {
@@ -231,8 +232,9 @@ body.no-scroll {
 
 .button-book {
   border: 1px solid #000;
-  padding: 7px 50px;
-  margin: 10px 0 20px 0;
+  margin-bottom: 20px;
+  width: 65%;
+  height: 6vh;
   background-image: linear-gradient(180deg, #ffc251, #cc873c);
 }
 
@@ -404,11 +406,11 @@ body.no-scroll {
   margin-top: 20px;
   height: 20vh;
   width: 100%;
-  transition: 0.4s;
+  transition: transform 0.4s;
 }
 
 .section-contact.on {
-  top: -40vh;
+  transform: translateY(-40vh);
 }
 
 .contact-switch {
@@ -422,7 +424,7 @@ body.no-scroll {
   background-color: #484848;
   font-size: 1.9rem;
   color: #fff;
-  transition: 0.4s;
+  transition: transform 0.4s;
 }
 
 .contact-switch.on {
@@ -556,14 +558,13 @@ body.no-scroll {
   font-size: 1.6rem;
   letter-spacing: 1px;
   background-color: #f7d6a0;
-  transition: 0.3s;
+  transition: background-color 0.5s;
 }
 
 .room-booking__btn-book.on {
   border-style: dashed;
   background-color: #c18941;
-  font-weight: bold;
-  transition: 0.3s;
+  font-weight: 700;
 }
 
 /* form */
@@ -665,10 +666,6 @@ input[type="number"] {
 /* MOBILE */
 
 @media (min-width: 360px) {
-  .main-section.on {
-    transform: translateY(-5.3%);
-  }
-
   /* HEADER */
 
   .head-image__title {
@@ -677,27 +674,32 @@ input[type="number"] {
 
   .navbar__link {
     padding: 20px;
+    font-size: 1.7rem;
   }
 
   .logo {
-    left: calc(50% - 30px);
-    width: 60px;
-    height: 60px;
+    left: calc(50% - 35px);
+    width: 70px;
+    height: 70px;
   }
 
   .logo__title {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .logo__triangle {
-    top: 30px;
-    left: calc(50% - 30px);
-    border-left-width: 30px;
-    border-right-width: 30px;
-    border-bottom-width: 30px;
+    top: 35px;
+    left: calc(50% - 35px);
+    border-left-width: 35px;
+    border-right-width: 35px;
+    border-bottom-width: 35px;
   }
 
   /* HOTEL INFO */
+
+  .section-info-hotel__title {
+    font-size: 2rem;
+  }
 
   .photo-gallery__item {
     flex-basis: 25vh;
@@ -706,8 +708,8 @@ input[type="number"] {
 
   /* ROOM */
 
-  .button-book {
-    padding: 10px 60px;
+  .button-book__text {
+    letter-spacing: 2px;
   }
 
   /* TOUR & TOUR POPUP */
@@ -751,7 +753,7 @@ input[type="number"] {
   }
 
   .section-contact.on {
-    top: -34vh;
+    transform: translateY(-36vh);
   }
 
   /* POP UP BOOKING */
@@ -768,8 +770,11 @@ input[type="number"] {
 }
 
 @media (min-width: 480px) {
-  /* HEADER */
+  .main-section.on {
+    transform: translateY(-4.5%);
+  }
 
+  /* HEADER */
   .navbar {
     margin: 0 auto;
     width: 90%;
@@ -778,7 +783,6 @@ input[type="number"] {
 
   .navbar__link {
     padding: 25px;
-    font-size: 1.7rem;
   }
 
   .head-image__title {
@@ -787,29 +791,7 @@ input[type="number"] {
     letter-spacing: 1px;
   }
 
-  .logo {
-    left: calc(50% - 35px);
-    width: 70px;
-    height: 70px;
-  }
-
-  .logo__title {
-    font-size: 1rem;
-  }
-
-  .logo__triangle {
-    top: 35px;
-    left: calc(50% - 35px);
-    border-left-width: 35px;
-    border-right-width: 35px;
-    border-bottom-width: 35px;
-  }
-
   /* HOTEL INFO */
-
-  .section-info-hotel__title {
-    font-size: 2rem;
-  }
 
   .section-info-hotel__text {
     font-size: 1.7rem;
@@ -838,11 +820,8 @@ input[type="number"] {
   }
 
   .button-book {
-    padding: 12px 85px;
-  }
-
-  .button-book__text {
-    letter-spacing: 2px;
+    width: 60%;
+    height: 5vh;
   }
 
   .slider-images__image {
@@ -912,7 +891,7 @@ input[type="number"] {
   }
 
   .section-contact.on {
-    top: -27vh;
+    transform: translateY(-28vh);
   }
 
   .contact-info__title {
@@ -976,12 +955,6 @@ input[type="number"] {
     font-size: 2.4rem;
   }
 
-  /* ROOM */
-
-  .button-book {
-    padding: 12px 95px;
-  }
-
   /* TOUR POPUP */
 
   .tour-info {
@@ -1001,10 +974,6 @@ input[type="number"] {
 
   .section-contact {
     height: 13vh;
-  }
-
-  .section-contact.on {
-    top: -28vh;
   }
 
   /* POPUP BOOKING */
@@ -1027,12 +996,12 @@ input[type="number"] {
 @media (min-width: 720px) {
   /* HEADER */
 
-  .main-section.on {
-    transform: translateY(-6%);
-  }
-
   .head {
     height: 60vh;
+  }
+
+  .head-menu {
+    width: 95%;
   }
 
   .logo {
@@ -1141,7 +1110,8 @@ input[type="number"] {
   }
 
   .button-book {
-    padding: 14px 105px;
+    width: 50%;
+    height: 4vh;
   }
 
   .button-book__text {
@@ -1229,7 +1199,7 @@ input[type="number"] {
   }
 
   .section-contact.on {
-    top: -23vh;
+    transform: translateY(-20vh);
   }
 
   .contact-info__title {
@@ -1243,7 +1213,7 @@ input[type="number"] {
 
   .contact-info__social {
     padding-left: 0;
-    height: 22vh;
+    height: 18vh;
   }
 
   .social-item__icon {
@@ -1307,72 +1277,32 @@ input[type="number"] {
 @media (min-width: 480px) and (orientation: landscape) {
   /* HEADER */
 
-  .main-section.on {
-    transform: translateY(-4%);
+  .head {
+    height: 114vh;
   }
 
   .head-menu {
-    margin: 20px auto;
+    margin: 10px auto;
   }
 
   .logo {
     display: none;
   }
 
-  .head-image__title {
-    font-size: 2rem;
-  }
-
   .navbar {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 58vh;
-  }
-
-  .navbar__item {
-    flex-basis: 50%;
+    height: 85vh;
   }
 
   .navbar__link {
     padding: 10px;
     margin: 5px;
-    font-size: 1.6rem;
   }
 
   .navbar__item--btn-book {
     margin-top: 10px;
   }
 
-  /* SECTION - HOTEL */
-
-  .section-info-hotel__title {
-    font-size: 1.9rem;
-  }
-
-  .section-info-hotel__text {
-    font-size: 1.6rem;
-  }
-
-  .photo-gallery__item {
-    flex-basis: 20vh;
-    width: 70%;
-  }
-
   /* SECTION - ROOMS */
-
-  .section-select-room__title {
-    font-size: 1.9rem;
-  }
-
-  .room__title,
-  .room__text {
-    font-size: 1.6rem;
-  }
-
-  .room__text {
-    width: 80%;
-  }
 
   .slider-images__image {
     width: 70%;
@@ -1386,28 +1316,9 @@ input[type="number"] {
     right: 16%;
   }
 
-  .slider-images i.fas {
-    width: 8vw;
-    font-size: 3.2rem;
-  }
-
-  .button-book__text {
-    font-size: 1.6rem;
-    letter-spacing: 2px;
-  }
-
-  /* SECTION - TOUR */
-
-  .section-select-tour__title {
-    font-size: 1.9rem;
-  }
-
-  .tour__image {
-    width: 65%;
-  }
-
-  .tour__text {
-    font-size: 1.6rem;
+  .button-book {
+    height: 10vh;
+    width: 50%;
   }
 
   /* POPUP TOUR */
@@ -1416,32 +1327,14 @@ input[type="number"] {
     height: 85vh;
   }
 
-  .tour-info__title {
-    font-size: 1.9rem;
-  }
-
   .look-tour__image {
     width: 60%;
   }
 
-  .read-tour__text {
-    font-size: 1.6rem;
-    line-height: 24px;
-  }
-
-  /* SECTION - ABOUT US */
-
-  .section-about-us__title {
-    font-size: 1.9rem;
-  }
+  /* ABOUT US */
 
   .section-about-us__image {
-    width: 75%;
-  }
-
-  .section-about-us__text {
-    font-size: 1.6rem;
-    line-height: 24px;
+    width: 70%;
   }
 
   /* FOOTER - CONTACT */
@@ -1451,18 +1344,12 @@ input[type="number"] {
   }
 
   .section-contact.on {
-    top: -50vh;
+    transform: translateY(-58vh);
   }
 
   .contact-switch {
     width: 13vh;
     height: 13vh;
-    font-size: 2rem;
-  }
-
-  .contact-info__title {
-    padding-bottom: 10px;
-    font-size: 1.9rem;
   }
 
   .contact-info__social {
@@ -1476,16 +1363,7 @@ input[type="number"] {
     font-size: 2.4rem;
   }
 
-  .social-item__text {
-    font-size: 1.6rem;
-  }
-
   /* POP UP booking room */
-
-  .box-booking__title {
-    padding: 5px;
-    font-size: 2.2rem;
-  }
 
   .room-booking__image,
   .room-booking__btn-book {
@@ -1496,168 +1374,6 @@ input[type="number"] {
   .search-form__input,
   .search-form__btn-submit {
     height: 14vh;
-  }
-
-  .room-booking__btn-book,
-  .search-form__title,
-  .search-form__btn-submit {
-    font-size: 1.6rem;
-  }
-
-  .form-gallery__image {
-    width: 70%;
-  }
-
-  .search-form__input {
-    font-size: 1.5rem;
-  }
-
-  .search-form__btn-submit {
-    margin-top: 30px;
-  }
-}
-
-@media (min-width: 600px) and (orientation: landscape) {
-  /* HEADER */
-  .head-menu {
-    margin-top: 10px;
-  }
-
-  .head-image__title {
-    padding: 5px 20px 5px 0;
-    font-size: 2.2rem;
-    letter-spacing: 2px;
-  }
-
-  .navbar__link {
-    padding: 15px;
-    font-size: 1.7rem;
-  }
-
-  .navbar__item--btn-book {
-    margin-top: 15px;
-  }
-
-  /* HOTEL INFO */
-
-  .section-info-hotel__title {
-    font-size: 2rem;
-  }
-
-  .section-info-hotel__text {
-    width: 80%;
-    font-size: 1.7rem;
-    line-height: 26px;
-  }
-
-  .photo-gallery__item {
-    width: 60%;
-  }
-
-  /* ROOMS */
-
-  .section-select-room__title {
-    font-size: 2rem;
-  }
-
-  .room__title,
-  .room__text,
-  .button-book__text {
-    font-size: 1.7rem;
-  }
-
-  .button-book__text {
-    letter-spacing: 3px;
-  }
-
-  /* TOUR & POPUP TOUR */
-
-  .section-select-tour__title {
-    font-size: 2rem;
-  }
-
-  .tour__image {
-    width: 70%;
-  }
-
-  .tour__text {
-    padding: 20px 16px;
-    font-size: 1.7rem;
-  }
-
-  .read-tour__text {
-    font-size: 1.7rem;
-    line-height: 25px;
-  }
-
-  /* ABOUT US */
-
-  .section-about-us__title {
-    font-size: 2rem;
-  }
-
-  .section-about-us__image {
-    width: 70%;
-  }
-
-  .section-about-us__text {
-    width: 80%;
-    font-size: 1.7rem;
-    line-height: 26px;
-  }
-
-  /* CONTACT */
-
-  .contact-info__title {
-    font-size: 2rem;
-  }
-
-  .contact-info__social {
-    margin: 15px;
-  }
-
-  .social-item__icon {
-    font-size: 2.5rem;
-  }
-
-  .social-item__text {
-    font-size: 1.7rem;
-  }
-
-  .contact-switch {
-    font-size: 2.2rem;
-  }
-
-  /* POPUP BOOKING */
-
-  .box-booking__title {
-    font-size: 2.3rem;
-    letter-spacing: 3px;
-  }
-
-  .room-booking__image,
-  .room-booking__btn-book {
-    width: 70%;
-  }
-
-  .room-booking__btn-book,
-  .search-form__input,
-  .search-form__btn-submit {
-    height: 12vh;
-  }
-
-  .search-form__title,
-  .search-form__btn-submit,
-  .room-booking__btn-book {
-    font-size: 1.7rem;
-  }
-
-  .room-booking__btn-book {
-    letter-spacing: 2px;
-  }
-
-  .search-form__input {
-    font-size: 1.6rem;
   }
 }
 
@@ -1672,281 +1388,65 @@ input[type="number"] {
     flex-basis: 32vh;
   }
 
+  .navbar {
+    height: 52vh;
+  }
+
   .navbar__item {
     margin: 0;
   }
 
-  .navbar__link {
-    margin: 10px;
-  }
-
-  .navbar__item--btn-book {
-    margin-top: 15px;
-  }
-
-  /* HOTEL INFO */
-  .section-info-hotel__title {
-    font-size: 2.1rem;
-  }
-
-  .section-info-hotel__text {
-    margin: 10px auto;
-    width: 75%;
-  }
+  /* HOTEL */
 
   .photo-gallery__item {
-    width: 55%;
+    width: 60%;
   }
 
-  /* ROOMS */
-
-  .section-select-room__title {
-    font-size: 2.1rem;
-  }
+  /* ROOM */
 
   .slider-images__image {
     width: 60%;
   }
 
-  .slider-images__arrow-right {
-    right: 21%;
-  }
-
-  .slider-images__arrow-left {
-    left: 21%;
-  }
-
-  .room__text {
-    width: 65%;
-  }
-
   /* TOUR & POPUP TOUR*/
 
-  .section-select-tour__title {
-    padding: 15px;
-    font-size: 2.1rem;
-  }
-
-  .collect-tours {
-    margin: 10px auto;
-  }
-
-  .tour__text {
-    padding: 15px 16px 25px 16px;
-    width: 66%;
-    line-height: 22px;
-  }
-
   .tour__image {
-    width: 65%;
+    width: 75%;
   }
 
   .tour-info.on {
-    height: 80vh;
-  }
-
-  .read-tour__text {
-    margin: 0 auto 25px auto;
+    height: 85vh;
   }
 
   /* ABOUT US */
-
-  .section-about-us__title {
-    font-size: 2.1rem;
-  }
 
   .section-about-us__image {
     width: 60%;
   }
 
-  .section-about-us__text {
-    width: 75%;
+  .slider-images__arrow-right {
+    right: 22%;
+  }
+
+  .slider-images__arrow-left {
+    left: 22%;
   }
 
   /* CONTACT */
-
-  .contact-info__title {
-    font-size: 2.1rem;
-  }
 
   .section-contact {
     height: 35vh;
   }
 
-  /* POPUP BOOKING */
-
-  .box-booking__title {
-    padding: 10px;
+  .section-contact.on {
+    transform: translateY(-50vh);
   }
+
+  /* POPUP BOOKING */
 
   .room-booking__image,
   .room-booking__btn-book {
     width: 65%;
-  }
-
-  .search-form__btn-submit {
-    margin-top: 40px;
-  }
-}
-
-@media (min-width: 850px) and (orientation: landscape) {
-  /* HEADER */
-  .head-image__title {
-    padding: 6px 25px 6px 0;
-    font-size: 2.4rem;
-  }
-
-  .navbar__link {
-    padding: 20px;
-    font-size: 1.8rem;
-  }
-
-  /* HOTEL INFO */
-
-  .section-info-hotel__title {
-    font-size: 2.2rem;
-  }
-
-  .section-info-hotel__text {
-    font-size: 1.8rem;
-    line-height: 28px;
-  }
-
-  .photo-gallery__item {
-    width: 52%;
-  }
-
-  /* ROOMS */
-
-  .section-select-room__title {
-    font-size: 2.2rem;
-  }
-
-  .room__title,
-  .room__text,
-  .button-book__text {
-    font-size: 1.8rem;
-  }
-
-  .room__title {
-    padding: 24px;
-  }
-
-  /* TOUR & POPUP TOUR */
-
-  .section-select-tour__title {
-    font-size: 2.2rem;
-  }
-
-  .tour__text {
-    padding-top: 18px;
-    width: 58%;
-    font-size: 1.8rem;
-    line-height: 23px;
-  }
-
-  .tour__image {
-    width: 60%;
-  }
-
-  .tour-info__title {
-    font-size: 2rem;
-  }
-
-  .look-tour__image {
-    width: 70%;
-  }
-
-  .read-tour__text {
-    margin: 10px auto 30px auto;
-    width: 78%;
-    font-size: 1.8rem;
-    line-height: 28px;
-  }
-
-  /* ABOUT US */
-
-  .section-about-us__title {
-    font-size: 2.2rem;
-  }
-
-  .section-about-us__image {
-    width: 55%;
-  }
-
-  .section-about-us__text {
-    width: 70%;
-    font-size: 1.8rem;
-    line-height: 28px;
-  }
-
-  /* CONTACT */
-
-  .contact-info__title {
-    font-size: 2.2rem;
-  }
-
-  .section-contact {
-    height: 30vh;
-  }
-
-  .section-contact.on {
-    top: -42vh;
-  }
-
-  .contact-info__social {
-    margin: 20px;
-    height: 40vh;
-  }
-
-  .social-item__text {
-    font-size: 1.8rem;
-  }
-
-  .contact-switch {
-    width: 12vh;
-    height: 12vh;
-    font-size: 2.3rem;
-  }
-
-  /* POPUP BOOKING */
-
-  .box-booking__title {
-    font-size: 2.4rem;
-    letter-spacing: 4px;
-  }
-
-  .room-booking__image,
-  .room-booking__btn-book {
-    width: 60%;
-  }
-
-  .room-booking__btn-book,
-  .search-form__title,
-  .search-form__btn-submit {
-    font-size: 1.8rem;
-  }
-
-  .room-booking__btn-book,
-  .search-form__input,
-  .search-form__btn-submit {
-    height: 11vh;
-  }
-
-  .room-booking__btn-book {
-    margin-bottom: 10px;
-  }
-
-  .form-gallery__image {
-    width: 75%;
-  }
-
-  .search-form {
-    width: 85%;
-  }
-
-  .search-form__input {
-    width: 100%;
   }
 }
 
@@ -1956,7 +1456,7 @@ input[type="number"] {
   /* HEADER */
 
   .main-section.on {
-    transform: translateY(-7%);
+    transform: translateY(-6%);
   }
 
   .head {
@@ -2015,22 +1515,26 @@ input[type="number"] {
     letter-spacing: 3px;
   }
 
+  .head-menu {
+    margin: 0;
+  }
+
   .navbar {
     margin: 0;
     position: absolute;
     top: 4%;
-    right: 2%;
-    height: 10vh;
-    width: 83%;
+    right: 3%;
+    height: 6vh;
+    width: 80%;
+    align-items: center;
   }
 
   .navbar__item {
-    margin: 10px;
+    margin-right: 10px;
     position: relative;
     top: 0;
     left: 0;
     flex-basis: 16%;
-    height: 55px;
     overflow: hidden;
   }
 
@@ -2041,6 +1545,7 @@ input[type="number"] {
     border-left-width: 0;
     border-right-width: 0;
     border-bottom: 1px solid #000;
+    transition: font-weight 0.2s;
   }
 
   .navbar__link:hover {
@@ -2050,16 +1555,17 @@ input[type="number"] {
   .navbar__link::after {
     content: "";
     position: absolute;
-    bottom: 19px;
-    left: -90%;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-100%);
+    width: 100%;
+    height: 2px;
     background-color: #000;
-    transition: 0.4s linear;
+    transition: transform 0.4s linear;
   }
 
   .navbar__link:hover::after {
-    width: 100%;
-    height: 3px;
-    left: 0;
+    transform: translateX(0);
   }
 
   .navbar__item--btn-book {
@@ -2069,14 +1575,15 @@ input[type="number"] {
   }
 
   .navbar__link--btn-book {
-    border: 2px solid rgb(31, 18, 18);
     letter-spacing: 3px;
     transition: 0.3s;
+    border-bottom: 0;
+    border: 4px double #565a33;
+    border-radius: 20px;
   }
 
   .navbar__link--btn-book:hover {
     font-weight: normal;
-    font-size: 2.4rem;
   }
 
   .navbar__link--btn-book::after {
@@ -2089,7 +1596,7 @@ input[type="number"] {
     margin: 20px auto;
     width: 95%;
     transform: translateX(-150%);
-    transition: 1s;
+    transition: transform 1s;
   }
 
   .section-info-hotel.active {
@@ -2142,7 +1649,7 @@ input[type="number"] {
   .room {
     flex-basis: 49%;
     transform: scale(0);
-    transition: 1s;
+    transition: transform 1s;
     border: none;
   }
 
@@ -2171,7 +1678,7 @@ input[type="number"] {
   .slider-images i.fas {
     font-size: 4rem;
     width: 4vw;
-    transition: 0.3s;
+    transition: color 0.4s;
     cursor: pointer;
   }
 
@@ -2184,15 +1691,16 @@ input[type="number"] {
   }
 
   .slider-images i.fas:hover {
-    color: #ffda8a;
+    color: #f3dcb8;
   }
 
   .button-book {
     position: relative;
     top: 0;
     left: 0;
-    padding: 10px 80px;
     margin: 5px 0 30px 0;
+    height: 5vh;
+    width: 55%;
     font-size: 2rem;
     font-weight: bold;
     letter-spacing: 2px;
@@ -2201,14 +1709,18 @@ input[type="number"] {
   }
 
   .button-book__text {
-    position: relative;
-    top: 0;
-    left: 0;
-    transition: 0.5s;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
   }
 
   .button-book:hover .button-book__text {
-    top: 40px;
+    transform: translate(-50%, 40px);
   }
 
   .button-book::before {
@@ -2216,13 +1728,14 @@ input[type="number"] {
     content: "\f236";
     position: absolute;
     left: 50%;
-    top: -80%;
-    transform: translate(-50%, -50%);
-    transition: 0.5s;
+    top: 50%;
+    transform: translate(-50%, -60px);
+    backface-visibility: hidden;
+    transition: transform 0.5s;
   }
 
   .button-book:hover::before {
-    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   /* SECTION - TOUR */
@@ -2252,7 +1765,7 @@ input[type="number"] {
     width: 95%;
     border-radius: 100px;
     transform: scale(0);
-    transition: 0.7s;
+    transition: transform 0.7s;
   }
 
   .tour__image.active {
@@ -2322,7 +1835,7 @@ input[type="number"] {
     left: 0;
     padding-bottom: 40px;
     transform: translateX(-150%);
-    transition: 1s;
+    transition: transform 1s;
     z-index: -1;
   }
 
@@ -2355,7 +1868,7 @@ input[type="number"] {
   }
 
   .section-contact.on {
-    top: -24vh;
+    transform: translateY(-22vh);
   }
 
   .contact-switch {
@@ -2364,11 +1877,6 @@ input[type="number"] {
     height: 7vh;
     font-size: 2.2rem;
     cursor: pointer;
-  }
-
-  .contact-switch:hover {
-    color: #bdd185;
-    text-shadow: 0 0 2px #000;
   }
 
   .contact-info {
@@ -2386,26 +1894,11 @@ input[type="number"] {
 
   .social-item {
     flex-basis: 50%;
-    transition: 0.4s;
-  }
-
-  .social-item:hover .social-item__icon,
-  .social-item:hover .social-item__text {
-    color: #e8f7ba;
-  }
-
-  .social-item:hover {
-    border-color: #e8f7ba;
   }
 
   .social-item__icon {
     margin-right: 40px;
     font-size: 3rem;
-    transition: 0.4s;
-  }
-
-  .social-item__text {
-    transition: 0.4s;
   }
 
   /* POP UP booking room */
@@ -2469,12 +1962,12 @@ input[type="number"] {
   }
 
   .search-form__btn-submit {
-    transition: 0.3s;
+    transition: background-color 0.4s;
     cursor: pointer;
   }
 
   .search-form__btn-submit:hover {
-    transform: scale(1.1);
+    background-color: #d8be9c;
   }
 
   .search-form__input {
@@ -2495,12 +1988,12 @@ input[type="number"] {
     font-size: 4rem;
     text-shadow: 0 0 20px #000;
     transform: translate(0, 0);
-    transition: 0.4s;
+    transition: color 0.4s;
     cursor: pointer;
   }
 
   .close-pop-up:hover {
-    color: #a97b41;
+    color: #b89a74;
     text-shadow: 0 0 20px #000;
   }
 
@@ -2638,7 +2131,7 @@ input[type="number"] {
   }
 
   .section-contact.on {
-    top: -18vh;
+    transform: translateY(-20vh);
   }
 
   .contact-info__title {
@@ -2813,7 +2306,7 @@ input[type="number"] {
   }
 
   .section-contact.on {
-    top: -14vh;
+    transform: translateY(-15vh);
   }
 
   .contact-info__social {
