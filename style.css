@@ -2030,10 +2030,6 @@ input[type="number"] {
     line-height: 20px;
   }
 
-  .navbar__link::after {
-    bottom: 17px;
-  }
-
   .logo {
     left: 5%;
   }
@@ -2211,10 +2207,6 @@ input[type="number"] {
     top: 2%;
   }
 
-  .navbar__item {
-    height: 56px;
-  }
-
   .navbar__link {
     padding: 8px;
     font-size: 2rem;
@@ -2222,10 +2214,6 @@ input[type="number"] {
 
   .navbar__link--btn-book {
     line-height: 22px;
-  }
-
-  .navbar__link::after {
-    bottom: 14px;
   }
 
   .head-image__title {

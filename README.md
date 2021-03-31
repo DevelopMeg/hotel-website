@@ -1,7 +1,21 @@
-## hotel-website
+# hotel-website
 
-This is the hotel's website.
+> This is my old project (which doesn`t contain aspects I learned from feedback), but shows progress of my skills
 
-Project was created using HTML, CSS (BEM, RWD) and JavaScript.
+#### This is the hotel's (single) page
 
-link: https://developmeg.github.io/hotel-website/
+Link: https://developmeg.github.io/hotel-website/
+
+---
+
+![screen home page](./screens/screen1.png)
+![screen home page](./screens/screen2.png)
+![screen home page](./screens/screen3.png)
+![screen home page](./screens/screen4.png)
+
+## Technologies
+
+- HTML
+- CSS
+- JavaScript
+- BEM
